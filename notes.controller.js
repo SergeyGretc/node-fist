@@ -26,7 +26,7 @@ async function editNote(id, title) {
 
   const editTitle = notes.find((note) => note.id === id);
   editTitle.title = title || editTitle.title;
-  // const savedNotes = [...notes.filter((note) => note.id !== id), editTitle];
+
   const savedNotes = [...notes];
 
   await saveNotes(savedNotes);

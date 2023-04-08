@@ -43,7 +43,7 @@ app.put("/:id", async (req, res) => {
     title: "Express App",
     note: note,
     notes: await getNotes(),
-    created: false,
+    created: true,
   });
 });
 
